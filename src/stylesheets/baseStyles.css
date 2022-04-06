@@ -1,0 +1,114 @@
+:root {font-family: mr-eaves-modern, sans-serif; color: #fff;}
+
+body {
+    background-color: #000;
+}
+
+.full-width-mod {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero styling */
+#site-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#hero {
+    background-image: url('../images/MF-portfolio-hero-chihuly1.jpg');
+    justify-content: center;
+    font-weight: 400;
+}
+#hero-title {
+    color: #fff;
+    font-family: mrs-eaves-xl-serif-narrow, serif;
+    opacity: 0.8;
+    font-size: 3rem;
+    display: block;
+}
+#hero-subtitle {
+    font-family: mrs-eaves-xl-serif, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/*Slide styling*/
+
+.slide-container {
+    display:flex;
+}
+
+.slide {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    margin-left: -100vw;
+    transition: margin-left .5s;
+    transition-timing-function:ease-in-out;
+}
+
+.slide-image {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.slide-image img {
+    /* margin-right: */
+    max-width: 1129px;
+    width: 66vw;
+    z-index: 2;
+}
+
+.slide-image-white-rt {
+    background-color: #fff;
+    width: calc(60vw - 5.65%);
+    height: 100vh;
+    /* position: absolute; */
+    /* width: 54.5vw; */
+    margin-left: -54.35vw;
+    /* right: 0; */
+    z-index: 1;
+}
+
+.slide-image-white-lt {
+    background-color: white;
+    width: calc(60vw - 5.65%);
+    height: 100vh;
+    margin-right: -54.35vw;
+    /* right: 0; */
+    z-index: 1;
+}
+
+.slide-content {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+}
+
+.slide-reverse {
+    flex-direction: row-reverse;
+
+}
+
+#focused {
+    margin-left: 0;
+}
+
+#next {
+    margin-left: 0vw;
+}
+
+#prev { 
+    /* margin-left: -100vw; */
+}
